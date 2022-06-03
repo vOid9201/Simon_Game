@@ -29,7 +29,7 @@ function checkSequence(currLevel){
         setTimeout(function(){
             $("body").removeClass("game-over");
         },1000);
-        var audio = new Audio("sounds/wrong.mp3");
+        var audio = new Audio("wrong.mp3");
         audio.play();
         reset();
     }
@@ -60,7 +60,7 @@ function clickHandler(){
 
 
 function makeSound(colour){
-    var audio = new Audio("sounds/"+colour+".mp3");
+    var audio = new Audio(colour+".mp3");
     audio.play();
 }
 function animePressed(colour){
